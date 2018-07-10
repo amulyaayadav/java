@@ -1,0 +1,35 @@
+public class student
+{
+    int rollno;
+    String name;
+    static void change()
+    {
+        college="BIT";
+    }
+    static void college()
+    {
+        college="DSU";
+    }
+    student(int r, String n)
+    {
+        rollno=r;
+        name=n;
+    }
+    void display ()
+    {
+        System.out.println(rollno+""+name+""+college);
+    }
+    public static void main(String args[])
+    {
+        student.change();
+        student s1=new student (111," karan ");
+        student s2=new student (222," aryan ");
+        student s3=new student (333," soman ");
+        s1.display();
+        s2.display();
+        s3.display();
+        student.college();
+        student s4=new student (444," priya ");
+        s4.display();
+    }
+}

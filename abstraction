@@ -1,0 +1,29 @@
+abstract class bank
+{
+    abstract int getrateofinterest();
+}
+class sbi extends bank
+{
+    int getrateofinterest()
+    {
+        return 8;
+    }
+}
+class axis extends bank
+{
+    int getrateofinterest()
+    {
+        return 9;
+    }
+}
+public class testbank
+{
+    public static void main(String args[])
+    {
+        bank b;
+        b=new sbi();
+        System.out.println("Rate of interest is:"+b.getrateofinterest()+"%");
+        b=new axis();
+        System.out.println("Rate of interest is:"+b.getrateofinterest()+"%");
+    }
+}
